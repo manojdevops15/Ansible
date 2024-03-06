@@ -1,9 +1,9 @@
 - name: Play 1
   hosts: localhost
   vars_files:
-    var1.yaml
-    var2.yaml
+    - var1.yaml
+    - var2.yaml
   tasks: Play1 and task1
-   - name: check names
+   - name: check variables
      ansible.builtin.debug:
       msg: "Hi my name is {{name}} and my age is {{age}}"
